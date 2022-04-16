@@ -16,19 +16,19 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <CustomLink
-                className="me-2 text-decoration-none text-dark pb-1"
+                className="me-3 text-decoration-none text-dark pb-1"
                 to="/"
               >
                 Home
               </CustomLink>
               <CustomLink
-                className="me-2 text-decoration-none text-dark pb-1"
+                className="me-3 text-decoration-none text-dark pb-1"
                 to="/services"
               >
                 Services
               </CustomLink>
               <CustomLink
-                className="me-2 text-decoration-none text-dark pb-1"
+                className="me-3 text-decoration-none text-dark pb-1"
                 to="/login"
               >
                 Sign In
