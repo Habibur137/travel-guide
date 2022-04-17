@@ -8,12 +8,13 @@ const Services = () => {
   const services = places.filter((service) =>
     service?.category.includes("services")
   );
+  console.log(services);
   return (
     <Container>
       <h1 className="text-center mt-5 mb-4">Top Services</h1>
       <Row xs={1} md={3} className="g-4">
-        {services?.map((place, index) => (
-          <Service key={index} place={place} />
+        {services?.map((service, index) => (
+          <Service key={index} service={service} />
         ))}
       </Row>
     </Container>
