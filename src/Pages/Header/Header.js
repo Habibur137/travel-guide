@@ -1,6 +1,6 @@
 import { signOut } from "firebase/auth";
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Spinner } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import CustomLink from "../../CustomLink/CustomLink";
@@ -10,7 +10,14 @@ import logo from "../../images/trawell_logo_mini.png";
 const Header = () => {
   const [user, loading] = useAuthState(auth);
   if (loading) {
-    return <p>Loading......</p>;
+    return (
+      <div className="d-flex justify-content-center align-items-center">
+        <div>
+          <Spinner animation="grow" size="sm" />
+          <Spinner animation="grow" />
+        </div>
+      </div>
+    );
   }
   return (
     <div>
