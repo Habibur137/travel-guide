@@ -13,6 +13,7 @@ import CheckOut from "./Pages/Home/Services/CheckOut/CheckOut";
 import RequireAuth from "../src/RequireAuth/RequireAuth";
 import Footer from "./Pages/Footer/Footer";
 import NotFound from "./Pages/NotFound/NotFound";
+import Blogs from "./Pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/asia" element={<Asia />} />
         <Route path="/africa" element={<Africa />} />
         <Route path="/europe" element={<Europe />} />

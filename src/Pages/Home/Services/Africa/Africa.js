@@ -12,7 +12,6 @@ const Africa = () => {
   console.log(africasPlace);
   return (
     <div>
-      <Link to="/checkout">CheckOut</Link>
       <Container>
         <h2 className="text-center mt-5 mb-4">Africa Services</h2>
         <Row xs={1} md={2} className="g-4">

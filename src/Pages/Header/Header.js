@@ -35,11 +35,18 @@ const Header = () => {
               >
                 Home
               </CustomLink>
+
               <CustomLink
                 className="me-3 text-decoration-none text-dark pb-1"
                 to="/services"
               >
                 Services
+              </CustomLink>
+              <CustomLink
+                className="me-3 text-decoration-none text-dark pb-1"
+                to="/blogs"
+              >
+                Blogs
               </CustomLink>
 
               {user ? (
