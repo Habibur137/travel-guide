@@ -5,6 +5,7 @@ import auth from "../../../firebase.init";
 import logo from "../../../images/trawell_logo_mini.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Spinner } from "react-bootstrap";
 
 const Login = () => {
   const location = useLocation();
@@ -12,8 +13,22 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   let from = location.state?.from?.pathname || "/";
+  let authError;
+  if (error) {
+    authError = <p className="text-danger">Error: {error.message}</p>;
+  }
   if (user) {
     navigate(from, { replace: true });
+  }
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center align-items-center">
+        <div>
+          <Spinner animation="grow" size="sm" />
+          <Spinner animation="grow" />
+        </div>
+      </div>
+    );
   }
   const handleLogin = (event) => {
     event.preventDefault();
@@ -47,6 +62,7 @@ const Login = () => {
           </button>
           <ToastContainer />
         </form>
+        {authError}
         <button className="mb-3 px-4 py-2 w-100 border-0 bg-white shadow-sm">
           <span className="text-success">Google </span>
           <span className="text-danger"> Sign In</span>

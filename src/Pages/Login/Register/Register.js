@@ -8,6 +8,7 @@ import auth from "../../../firebase.init";
 import logo from "../../../images/trawell_logo_mini.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Spinner } from "react-bootstrap";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const Register = () => {
   let authError;
   if (creationError || updateError) {
     authError = (
-      <p>
+      <p className="text-danger">
         Error: {creationError?.message} {updateError?.message}
       </p>
     );
@@ -31,7 +32,14 @@ const Register = () => {
   }
   //loading
   if (loading || updating) {
-    return <p>Loading...</p>;
+    return (
+      <div className="d-flex justify-content-center align-items-center">
+        <div>
+          <Spinner animation="grow" size="sm" />
+          <Spinner animation="grow" />
+        </div>
+      </div>
+    );
   }
   const handleRegistration = async (event) => {
     event.preventDefault();
