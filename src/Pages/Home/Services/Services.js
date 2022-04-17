@@ -11,7 +11,7 @@ const Services = () => {
   console.log(services);
   return (
     <Container>
-      <h1 className="text-center mt-5 mb-4">Top Services</h1>
+      <h2 className="text-center mt-5 mb-4">Top Services</h2>
       <Row xs={1} md={3} className="g-4">
         {services?.map((service, index) => (
           <Service key={index} service={service} />

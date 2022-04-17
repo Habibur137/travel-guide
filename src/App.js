@@ -12,6 +12,7 @@ import Europe from "./Pages/Home/Services/Europe/Europe";
 import CheckOut from "./Pages/Home/Services/CheckOut/CheckOut";
 import RequireAuth from "../src/RequireAuth/RequireAuth";
 import Footer from "./Pages/Footer/Footer";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
