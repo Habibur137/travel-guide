@@ -2,26 +2,130 @@
     {
         "name":"Africa",
         "category":"services",
-        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "description":"Guide To Visit Vitoria Park With Family",
         "articles":"6",
         "img":"../images/services-1.jpg",
         "link":"/africa"
     },
     {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time": "1 weeks",
+        "img":"../images/africa-1.jpg"
+    },
+    {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"6 weeks",
+        "img":"../images/africa-2.jpg"
+    
+    },
+    {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"4 weeks",
+        "img":"../images/africa-3.jpg"
+
+    },
+    {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"6 weeks",
+        "img":"../images/africa-4.jpg"
+    },
+    {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"2 weeks",
+        "img":"../images/africa-5.jpg"
+    },
+    {
+        "name":"Africa",
+        "category":"africa",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"2 weeks",
+        "img":"../images/africa-6.jpg"
+    },
+    {
         "name":"Asia",
         "category":"services",
-        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "description":"Guide To Visit Vitoria Park With Family",
         "articles":"4",
         "img":"../images/services-2.jpg",
         "link":"/asia"
+    },
+    {
+        "name":"Asia",
+        "category":"asia",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"4 weeks",
+        "img":"../images/asia-1.jpg"
+    },
+    {
+        "name":"Asia",
+        "category":"asia",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"4 weeks",
+        "img":"../images/asia-2.jpg"
+    },
+    {
+        "name":"Asia",
+        "category":"asia",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"4 weeks",
+        "img":"../images/asia-3.jpg"
+    },
+    {
+        "name":"Asia",
+        "category":"asia",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"4 weeks",
+        "img":"../images/asia-4.jpg"
     },
     
     {
         "name":"Europe",
         "category":"services",
-        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "description":"Guide To Visit Vitoria Park With Family",
         "articles":"4",
         "img":"../images/services-3.jpg",
         "link":"/europe"
+    },
+    {
+        "name":"Europe",
+        "category":"europe",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"8 weeks",
+        "img":"../images/europe-1.jpg"
+
+    },
+    {
+        "name":"Europe",
+        "category":"europe",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"7 weeks",
+        "img":"../images/europe-2.jpg"
+
+    },
+    {
+        "name":"Europe",
+        "category":"europe",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"5 weeks",
+        "img":"../images/europe-3.jpg"
+
+    },
+    {
+        "name":"Europe",
+        "category":"europe",
+        "description":"Guide To Visit Vitoria Park With Family",
+        "time":"3 weeks",
+        "img":"../images/europe-4.jpg"
+
     }
 ]
