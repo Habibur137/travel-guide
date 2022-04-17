@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Africa",
+        "category":"services",
+        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "articles":"6",
+        "img":"../images/services-1.jpg",
+        "link":"/africa"
+    },
+    {
+        "name":"Asia",
+        "category":"services",
+        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "articles":"4",
+        "img":"../images/services-2.jpg",
+        "link":"/asia"
+    },
+    
+    {
+        "name":"Europe",
+        "category":"services",
+        "description":"Place with variety of activities for tourists to experience. Discover the delights of Vietnam through highlights. Sign Up For Newsletter. View Events. Plan Your Trip. Highlights: Newsletter Available, Guide Available.",
+        "articles":"4",
+        "img":"../images/services-3.jpg",
+        "link":"/europe"
+    }
+]

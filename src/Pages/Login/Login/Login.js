@@ -25,6 +25,10 @@ const Login = () => {
             Sign In
           </button>
         </form>
+        <button className="mb-3 px-4 py-2 w-100 border-0 bg-white shadow-sm">
+          <span className="text-success">Google </span>
+          <span className="text-danger"> Sign In</span>
+        </button>
         <p style={{ color: "gray" }}>
           Need An Account ?{" "}
           <Link className="text-info" to="/register">
