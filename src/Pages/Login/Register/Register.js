@@ -3,19 +3,36 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import logo from "../../../images/trawell_logo_mini.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
+  const navigate = useNavigate();
   // user creation hook
   const [createUserWithEmailAndPassword, user, loading, creationError] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   // user extra information collect hook
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
   // New User Creator Function
+  // any auth error
+  let authError;
+  if (creationError || updateError) {
+    authError = (
+      <p>
+        Error: {creationError?.message} {updateError?.message}
+      </p>
+    );
+  }
+  if (user) {
+    navigate("/login");
+  }
+  //loading
+  if (loading || updating) {
+    return <p>Loading...</p>;
+  }
   const handleRegistration = async (event) => {
     event.preventDefault();
     const name = event.target.name.value;
@@ -69,6 +86,7 @@ const Register = () => {
             </button>
             <ToastContainer />
           </form>
+          {authError}
           <p style={{ color: "gray" }}>
             Already Have An Account ?{" "}
             <Link className="text-info" to="/login">
