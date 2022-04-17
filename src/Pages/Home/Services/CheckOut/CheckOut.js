@@ -43,7 +43,7 @@ const CheckOut = () => {
               required
             />
             <button className="mb-3 bg-info p-2 border-0 text-white">
-              Buy Now
+              Check Out
             </button>
           </form>
         </div>

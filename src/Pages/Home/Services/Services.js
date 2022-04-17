@@ -8,7 +8,9 @@ const Services = () => {
   const services = places.filter((service) =>
     service?.category.includes("services")
   );
-  console.log(services);
+  if (!services.length) {
+    return <p>Loading.....</p>;
+  }
   return (
     <Container>
       <h2 className="text-center mt-5 mb-4">Top Services</h2>
